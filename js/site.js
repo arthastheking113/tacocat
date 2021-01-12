@@ -113,7 +113,7 @@ function checkForPalindrome() {
   // set the inner text of result to 'Yes, it is'
   // If nothing in the input, the rerult will be 'You entered nothing, Please type something!'
   if (reverseString.length == 0 || lowRegStr.length == 0){
-    document.getElementById("result").placeholder = "You entered nothing, Please type something!";
+    document.getElementById("result").placeholder = "You entered nothing OR special characters, Please type something else!";
   } else {
     if (reverseString === lowRegStr) {
       document.getElementById("result").placeholder = "Yes, it is.";
