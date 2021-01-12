@@ -86,7 +86,9 @@ function reverseTheString(str) {
 }
 
 function clearword(){
-  document.getElementById("word").reset();
+  document.getElementById("word").value = "";
+  document.getElementById("mirror").placeholder = "Mirror";
+  document.getElementById("result").placeholder = "Result";
 }
 // Let the user know whether it's a palindrome
 
@@ -109,7 +111,8 @@ function checkForPalindrome() {
 
   // If the reverse string is the same as our cleaned input string,
   // set the inner text of result to 'Yes, it is'
-  if (reverseString.length || lowRegStr.length == 0){
+  // If nothing in the input, the rerult will be 'You entered nothing, Please type something!'
+  if (reverseString.length == 0 || lowRegStr.length == 0){
     document.getElementById("result").placeholder = "You entered nothing, Please type something!";
   } else {
     if (reverseString === lowRegStr) {
