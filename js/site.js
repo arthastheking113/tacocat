@@ -138,7 +138,9 @@ document.getElementById("word").addEventListener("keydown", (event) => {
     event.key !== "Backspace" &&
     event.key !== "Enter" &&
     event.key !== "Tab" &&
-    event.key !== "Shift" 
+    event.key !== "Shift" &&
+    !event.altKey &&
+    !event.ctrlKey
   ) {
     // Last in first out
     reversedString.unshift(event.key);
