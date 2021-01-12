@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lan's Mini Sites</title>
+  <title>Lan's Tacocat</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,12 +26,12 @@
   <link href="css/sweetalert2.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="page-top">
 
   <!-- ======= Header/ Navbar ======= -->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">Lan's Mini Sites</a>
+      <a class="navbar-brand js-scroll" target="_blank" href="index.html">Lan's Mini Sites</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -49,7 +49,7 @@
             <a class="nav-link js-scroll" target="_blank" href="https://duylanle-portfolio.netlify.app">My Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" target="_blank"href="https://duylanle-portfolio.netlify.app/project_site.html">Project</a>
+            <a class="nav-link js-scroll" href="https://duylanle-portfolio.netlify.app/project_site.html">Project</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="index.html">Mini Sites</a>
@@ -65,12 +65,12 @@
     </div>
   </nav>
 
-  <div class="intro intro-single route bg-image" style="background-image: url(img/overlay-bg.jpg)">
+  <div class="intro intro-single route bg-image">
     <div class="overlay-mf"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="intro-title mb-4">Mini Sites</h2>
+          <h2 class="intro-title mb-4">Tacocat</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a target="_blank" href="https://duylanle-portfolio.netlify.app">Home</a>
@@ -78,171 +78,81 @@
             <li class="breadcrumb-item">
               <a href="index.html">Mini Sites</a>
             </li>
+            <li class="breadcrumb-item">
+              <a href="solve.html">Tacocat</a>
+            </li>
           </ol>
         </div>
       </div>
     </div>
   </div>
-
-  <section id="minisites" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/taco-cat.jpg" data-gall="portfolioGallery" class="venobox">
-              <div class="work-img">
-                <img src="img/taco-cat.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
+<br>
+<section class="about-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="box-shadow-full">
+          
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/Tacocat.PNG" style="width: 100%; height: 100%;">
               <div class="row">
-                <div class="col-sm-7">
-                  <h2 class="w-title">Taco Cat</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Taco Cat Site</span> / <span class="w-date">Jan 18. 2021</span>
-                  </div>
                 </div>
-                <div class="col-sm-5">
-                  <div class="row">
-                    <div class="w-like">
-                      <button onclick="project_popup1()" class="button button-a btn-sm button-rouded">See My Taco Cat</button>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-md-6">
+              <div class="about-me pt-4 pt-md-0">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    What is tacocat?
+                  </h5>
                 </div>
-              </div>
+                <p class="lead">
+                  The TACOCAT coding challenge is based on the more traditional “reverse a string” 
+                  exercise, but ultimately determines if a word or phrase is a palindrome.
+                </p>
+                <p class="lead">
+                  Technologies Used: HTML, JavaScript, CSS, Bootstrap.
+                </p>
+                <p class="lead">
+                  <b>Example:</b> the user enters "developer" the output is "repoleved".</p>
+                <br>
+                <div class="text-center">
+                  <a target="_blank" href="https://github.com/arthastheking113/tacocat" >
+                    <button type="button" class="button button-a button-round" >Github Repository</button>
+                  </a>
+                </div>
+              </div> 
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/project-1.jpg" data-gall="portfolioGallery" class="venobox">
-              <div class="work-img">
-                <img src="img/project-1.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h2 class="w-title">Sudoku Solver</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Sudoku</span> / <span class="w-date">Dec 6, 2020</span>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="w-like">
-                    <button onclick="project_popup2()" class="button button-a btn-sm button-rouded">See Sudoku Site</button>
-                  </div>
-                </div>
-              </div>
+          <br >
+          <div class="row">
+            <div class="input-group mb-3">
+              <input type="text" id="word" class="form-control" placeholder="Enter Any Word" style="background-color: #e9ecef;">
+              <input type="text" id="mirror" class="form-control" placeholder="Mirror" disabled>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/superdog.jpg" data-gall="portfolioGallery" class="venobox">
-              <div class="work-img">
-                <img src="img/superdog.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-7">
-                  <h2 class="w-title">SuperDog Events</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">SuperDog</span> / <span class="w-date">Dec 6, 2020</span>
-                  </div>
-                </div>
-                <div class="col-sm-5">
-                  <div class="w-like">
-                    <button onclick="project_popup3()" class="button button-a btn-sm button-rouded">See My SDE</button>
-                  </div>
-                </div>
+          <br >
+          <div class="row">
+            <div class="center">
+              <button onclick="checkForPalindrome()" class="button button-a button-round">Is this word palindrome?</button>
+              <button onclick="clearword()" class="button button-a button-round">Clear</button>
+            </div>
+          </div>
+          <br>
+          <br>
+          
+          <div class="row">
+            <div class="col-7 center">
+              <div class="input-group mb-3">
+                <input type="text" id="result" class="form-control" placeholder="Result" disabled>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/fizzbuzz.jpg" data-gall="portfolioGallery" class="venobox">
-              <div class="work-img">
-                <img src="img/fizzbuzz.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-7">
-                  <h2 class="w-title">FizzBuzz</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">FizzBuzz Site</span> / <span class="w-date">Jan 18. 2021</span>
-                  </div>
-                </div>
-                <div class="col-sm-5">
-                  <div class="row">
-                    <div class="w-like">
-                      <button onclick="project_popup4()" class="button button-a btn-sm button-rouded">See My FizzBuzz</button>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/sumofallfear.jpg" data-gall="portfolioGallery" class="venobox">
-              <div class="work-img">
-                <img src="img/sumofallfear.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h2 class="w-title">Sum of All Fears</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">SoAF</span> / <span class="w-date">Dec 6, 2020</span>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="w-like">
-                    <button onclick="project_popup5()" class="button button-a btn-sm button-rouded">See My SoAF</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/sunset.jpg" data-gall="portfolioGallery" class="venobox">
-              <div class="work-img">
-                <img src="img/sunset.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h2 class="w-title">Sunset Hills</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Sunset Hills</span> / <span class="w-date">Jan 5, 2021</span>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="w-like">
-                    <button onclick="project_popup6()" class="button button-a btn-sm button-rouded">See Sunset Hills</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-  </section>
+    </div>
+  </div>
+</section><!-- End About Section -->
 
   <!-- ======= Footer ======= -->
   <footer>
@@ -252,7 +162,7 @@
           <div class="copyright-box">
             <p class="copyright">&copy; Copyright <strong>Duy Lan Le</strong>. All Rights Reserved</p>
             <div class="credits">
-              Designed by <a href="index.html">Duy Lan Le</a>
+              Designed by <a target="_blank" href="https://duylanle-portfolio.netlify.app">Duy Lan Le</a>
             </div>
           </div>
         </div>
@@ -274,10 +184,13 @@
   <script src="js/typed.min.js"></script>
   <script src="js/venobox.min.js"></script>
   <script src="js/site.js"></script>
-  <script src="js/sweetalert2.all.js"></script>
-  <script src="js/sweetalert2.all.min.js"></script>
+
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+  <script src="js/sweetalert2.min.js"></script>
 
 </body>
 
