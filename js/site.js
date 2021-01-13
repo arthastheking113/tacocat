@@ -7,6 +7,7 @@ function reverseTheString(str) {
 function clearword(){
   document.getElementById("word").value = "";
   document.getElementById("mirror").placeholder = "Mirror";
+  document.getElementById("mirror").value = "";
   document.getElementById("result").placeholder = "Result";
 }
 // Let the user know whether it's a palindrome
