@@ -165,6 +165,7 @@
       <div class="modal-body text-center">
         <pre>
           <code class="language-js">
+// function for running
 function reverseTheString(str) {
   // Reverse our string
   return str.split("").reverse().join("");
@@ -173,6 +174,7 @@ function reverseTheString(str) {
 function clearword(){
   document.getElementById("word").value = "";
   document.getElementById("mirror").placeholder = "Mirror";
+  document.getElementById("mirror").value = "";
   document.getElementById("result").placeholder = "Result";
 }
 // Let the user know whether it's a palindrome
@@ -229,6 +231,7 @@ document.getElementById("word").addEventListener("keydown", (event) => {
   ) {
     // Last in first out
     reversedString.unshift(event.key);
+    
   }
   if (event.key == "Backspace") {
     // Remove first element of the array if we hit backspace
@@ -245,7 +248,13 @@ document.getElementById("word").addEventListener("keydown", (event) => {
     // Otherwise, spit out whatever is in the array
     document.getElementById("mirror").placeholder = reversedString.join("");
   }
+  // REFACTOR THIS SO THAT WE GET OUR MIRROR FROM OUR INPUT BOX AND NOT THE KEYS
+  document.getElementById("clearword").addEventListener("click", (event) => {
+    reversedString = []
+  })
+  
 });
+
           </code>
         </pre>
       </div>
