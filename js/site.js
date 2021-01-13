@@ -64,6 +64,7 @@ document.getElementById("word").addEventListener("keydown", (event) => {
   ) {
     // Last in first out
     reversedString.unshift(event.key);
+    
   }
   if (event.key == "Backspace") {
     // Remove first element of the array if we hit backspace
@@ -80,6 +81,9 @@ document.getElementById("word").addEventListener("keydown", (event) => {
     // Otherwise, spit out whatever is in the array
     document.getElementById("mirror").placeholder = reversedString.join("");
   }
-
   // REFACTOR THIS SO THAT WE GET OUR MIRROR FROM OUR INPUT BOX AND NOT THE KEYS
+  document.getElementById("clearword").addEventListener("click", (event) => {
+    reversedString = []
+  })
+  
 });
